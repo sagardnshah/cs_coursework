@@ -1,0 +1,26 @@
+import java.util.*;
+import java.io.*;
+
+public class FinalStrings
+{
+    public static void main(String[] args) throws IOException
+    {
+        Scanner keyboard = new Scanner(System.in);
+        String fileName;
+        Scanner inputFile;
+            
+        System.out.println("Enter the name of the file: ");
+        fileName = keyboard.nextLine();
+        inputFile = new Scanner(new File(fileName));
+        
+        String original;
+        
+        while(inputFile.hasNextLine())
+        {
+            original = inputFile.nextLine();
+            StringConverter = new StringConverter(original);            
+        }
+        
+        inputFile.close();
+    }
+}

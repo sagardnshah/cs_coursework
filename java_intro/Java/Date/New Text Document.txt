@@ -1,0 +1,31 @@
+/**
+        int leapYear;
+        
+        if(year%4 !=0)
+        {
+            leapYear = 0;
+        }
+        else if(year%100)
+        {
+            leapYear = 1;
+        }
+        else if(year%400)
+        {
+            leapYear = 0;
+        }
+        else
+        {
+            leapYear=1;
+        };
+        
+        if(leapYear = 1)
+        {
+            Feb = 29;
+            totalDays = 366;
+        }
+        else
+        {
+            Feb = 28;
+            totalDays = 365;
+        }
+        **/

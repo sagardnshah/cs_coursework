@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Client()
+comment1.params=fn\ ln\ addr\ ID\ NOV\ bal\ numOfPets\ pets
+comment1.target=Client(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ int,\ Pet[])
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ client\r\n\ it\ will\ accept\ values\ for\ all\ the\ instance\ variables\ and\ the\ pets\ array\r\n
+comment2.params=
+comment2.target=java.lang.String\ toString()
+comment2.text=\r\n\ overridden\ toString()\ method\ for\ the\ client\ object\r\n\ \r\n\ @param\ \ \ none\r\n\ @return\ \ String\ representation\ of\ the\ object\r\n
+comment3.params=client
+comment3.target=boolean\ equals(Client)
+comment3.text=\r\n\ a\ mathod\ to\ compare\ two\ clients\ by\ comparing\ their\ clientID\ fields\r\n\ \r\n\ @param\ \ Client\ clie\r\n\ @return\ \ \ \ \ a\ boolean\ value\ for\ true/false\r\n
+numComments=4

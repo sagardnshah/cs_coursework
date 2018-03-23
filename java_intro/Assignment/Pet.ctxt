@@ -1,0 +1,13 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Pet()
+comment1.params=n\ t\ w\ DOLRS\ DOLV
+comment1.target=Pet(java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String,\ java.lang.String)
+comment1.text=\r\n\ Constructor\ for\ objects\ of\ class\ pet\r\n\ it\ will\ accept\ values\ for\ all\ the\ instance\ variables\r\n
+comment2.params=pet
+comment2.target=Pet(Pet)
+comment2.text=\r\n\ Constructor\ for\ objects\ of\ class\ client\r\n\ it\ is\ a\ copy\ constructor\ that\ will\ accept\ instances\ of\ pet\ objects\r\n
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ overridden\ toString()\ method\ for\ the\ pet\ object\r\n\ \r\n\ @param\ \ \ none\r\n\ @return\ \ String\ representation\ of\ the\ object\r\n
+numComments=4

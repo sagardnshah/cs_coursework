@@ -1,0 +1,26 @@
+#BlueJ class context
+comment0.params=
+comment0.target=Date()
+comment1.params=m\ d\ y
+comment1.target=Date(int,\ int,\ int)
+comment2.params=m\ d\ y
+comment2.target=Date(java.lang.String,\ int,\ int)
+comment3.params=
+comment3.target=java.lang.String\ toString()
+comment3.text=\r\n\ toString\ method\ to\ represent\ the\ date\ object\ in\ a\ string\ format\r\n\r\n\ @return\ \ \ \ \ a\ string\ representation\ of\ the\ date\ \r\n
+comment4.params=obj
+comment4.target=boolean\ equals(java.lang.Object)
+comment4.text=\r\n\ compares\ object\ fields\ to\ see\ if\ they\ are\ equal\r\n\ @param\ \ \ obj\r\n\ @return\ \ \ \ \ equality\ boolean\ \r\n
+comment5.params=anotherDate
+comment5.target=int\ compareTo(Date)
+comment5.text=\r\n\ compares\ date\ objects\ to\ see\ which\ date\ comes\ before\ the\ other\r\n\ @param\ \ \ anotherDate\r\n\ @return\ \ \ \ \ a\ integer\ to\ determine\ the\ order\ of\ dates\r\n
+comment6.params=numDays
+comment6.target=Date\ add(int)
+comment6.text=\r\n\ add\ dates\r\n\ @param\ \ \ numDays\r\n\ @return\ \ \ \ \ new\ date\r\n
+comment7.params=numDays
+comment7.target=Date\ subtract(int)
+comment7.text=\r\n\ subtract\ dates\r\n\ @param\ \ \ anotherDate\r\n\ @return\ \ \ \ \ new\ date\r\n
+comment8.params=anotherDate
+comment8.target=Date\ daysBetween(int)
+comment8.text=\r\n\ calulates\ days\ between\ two\ days\r\n\ @param\ \ \ anotherDate\r\n\ @return\ \ \ \ \ amount\ of\ days\ between\r\n
+numComments=9

@@ -1,0 +1,44 @@
+public class Pet
+{
+    private String name;
+    private String type;
+    private String weight;
+    private String dateOfLastRabiesShot;
+    private String dateOfLastVisit;
+    
+    public Pet()
+    {
+        
+    }
+    
+    public Pet(String n, String t, String w, String DOLRS, String DOLV)
+    {
+        name = n;
+        type = t;
+        weight = w;
+        dateOfLastRabiesShot = DOLRS;
+        dateOfLastVisit = DOLV;
+    }
+    
+    public Pet(Pet pet)
+    {
+        name = pet.name;
+        type = pet.type;
+        weight = pet.weight;
+        dateOfLastRabiesShot = pet.dateOfLastRabiesShot;
+        dateOfLastVisit = pet.dateOfLastVisit;
+    }
+    
+    public String toString()
+    {
+        String string = 
+        "Pet info: \n"
+        + "Name: " + name + "\n"
+        + "Type: " + type + "\n"
+		+ "Weight: " + weight + "\n"
+		+ "Date of last rabies shot: " + dateOfLastRabiesShot + "\n"
+		+ "Date of last Visit:: " + dateOfLastVisit + "\n";
+		
+		return string;
+    }
+}

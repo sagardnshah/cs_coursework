@@ -1,0 +1,7 @@
+Customer Name: Hello. 
+Customer Phone Number: 9292288. 
+Number of Guests: 20. 
+Entree: Choice 2. 
+Side Dishes: None. 
+Dessert: Choice 2. 
+Cost: $700. 

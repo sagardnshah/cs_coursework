@@ -1,0 +1,189 @@
+
+public class Date
+{
+    /* --------------------------------------------------------------------------- *
+	 * You'll only need three fields for this class: the month, day, and year. But *
+	 * you can also have some arrays, which will make the process for your methods *
+	 * a bit easier: 1) an array for the month names, and 2) an array for the days *
+	 * in each month. So, something like:                                          *
+	 * int[] monthNames = {"January","February", ... "December"};                  *
+	 * int[] numDaysInMonth = {31,28, ... 31};                                     *
+	 * --------------------------------------------------------------------------- */
+	 
+	public Date()
+	{
+		// Default constructor will set the date to some date that you choose.
+		// Lehmann suggested using 1/1/1970
+	}
+	
+	public Date(int mm, int dd, int yyyy)
+	{
+		// Secondary constructor that takes in three integer values for the month,
+		// day, and year
+	}
+	
+	public Date(String mm, int dd, int yyyy)
+	{
+		// EXTRA CREDIT: convert the string to its numeric value, so if it's
+		// "January", the month is 1
+	}
+	
+	public String toString()
+	{
+		// Return a string that includes all the field values: month, day, and year
+	}
+	
+	public boolean equals(Date anotherDate)
+	{
+		// You have three choices for this method: 1) compare all the field values,
+		// 2) compare the toString()'s or 3) compare the getDate()'s
+	}
+	
+	public int compareTo(Date anotherDate)
+	{
+		// The easiest way to do this is to compare the highest unit that isn't the
+		// same between the two dates: year > month > day
+		// e.g. if (this.year > anotherDate.year) return 1;
+	}
+	
+	public Date add(int numDays)
+	{
+		/* First, store your starting point so that you're not changing your field values. */
+		int tempDay = this.day;
+		int tempMonth = this.month;
+		int tempYear = this.year;
+		
+		/* Then, you can set up your loop. It will add one day at a time, until there
+         * are no more days left to add */
+		while (numDays > 0)
+		{
+			/* You need to figure out what the last day of the month is.
+			 * So, you can either have an if-else statement, or you can 
+			 * have the days in each month stored in an array. */
+			 
+			// If it's the last day of December:
+			if (tempDay == /*last day of month*/ && tempMonth == 12)
+			{
+				// Can't just add a day:
+				// You're moving to January 1 of the next year
+			}
+			// If it's the last day of a month other than December:
+			else if (tempDay == /*last day of month*/ && tempMonth != 12)
+			{
+				// Can't just add a day:
+				// Go to the first day of the next month
+			}
+			else
+			{
+				// Just add a day:
+			}
+			
+			numDays--; // Decrement the number of days to add
+		}
+		
+		// Then, return the new date after the addition
+		return new Date(tempMonth,tempDay,tempYear);
+	}
+	
+	public Date subtract(int numDays)
+	{
+		/* Kind of the same thing as above, except your tests are for the first
+		 * of the month, rather than for the last day of the month */
+		int tempDay = this.day;
+		int tempMonth = this.Month;
+		int tempYear = this.Year;
+		
+		while (numDays > 0)
+		{
+			/* You need to figure out what the last day of the month is.
+			 * So, you can either have an if-else statement, or you can 
+			 * have the days in each month stored in an array. */
+			 
+			// If it's the first of January:
+			if (tempDay == 1 && tempMonth == 1)
+			{
+				// Can't just subtract a day:
+				// You're moving to December 31 of the previous year
+			}
+			// If it's the first day of a month other than January:
+			else if (tempDay == 1 && tempMonth != 1)
+			{
+				// Can't just subtract a day:
+				// Go to the last day of the previous month
+			}
+			else
+			{
+				// Just subtract a day:
+			}
+			
+			numDays--; // Decrement the number of days to subtract
+		}
+		
+		// Then, return the new date after the addition
+		return new Date(tempMonth,tempDay,tempYear);
+	}
+	
+	public int daysBetween(Date anotherDate)
+	{
+		/* Have some start point variables: */
+		int tempDay;
+		int tempMonth;
+		int tempYear;
+		
+		/* And a counter variable */
+		int numDaysBetween = 0;
+
+		/* First, you need to figure out which date comes before, or after the other one. 
+		 * There are a few ways you can approach this method from there. But, start with 
+		 * getting which one is before the other one: */
+		if (this.compareTo(anotherDate) < 0) // this comes before anotherDate
+		{
+			// Set your starter variables to the fields for this:
+			tempDay = this.day;
+			tempMonth = this.month;
+			tempYear = this.year;
+			
+			/* Then, all you have to do is use your add() method logic. Add a day to the
+			 * temp variables until they match the date that comes after the other -- in
+			 * this case, it would be anotherDate's fields */
+			while (tempDay != anotherDate.day || tempMonth != anotherDate.month || tempYear != anotherDate.year)
+			{
+				// Add a day to the temp variables, and increment your counter
+			}
+		}
+		else if (this.compareTo(anotherDate) > 0) // this comes after anotherDate
+		{
+			// So, set the starter variables to the fields for anotherDate:
+			tempDay = anotherDate.day;
+			tempMonth = anotherDate.month;
+			tempYear = anotherDate.year;
+			
+			/* Then, do the exact same thing as above, but you're trying to get to 'this' */
+			while (tempDay != this.day || tempMonth != this.month || tempYear != this.year)
+			{
+				// Add a day to the temp variables, and increment your counter
+			}
+		}
+		else // they're the same date:
+			return 0;
+		
+		return numDaysBetween;
+	}
+	
+	public String getDate(char format)
+	{
+		// Use a switch or if else, then just return the date in that format
+		// Either long e.g. "January 1, 1970" or short e.g. "1/1/1970"
+	}
+	
+	public int getJulianDay()
+	{
+		// EXTRA CREDIT:
+		// Just total all the days in each month before the current month and
+		// add the days.
+	}
+	
+}
+    
+    
+    
