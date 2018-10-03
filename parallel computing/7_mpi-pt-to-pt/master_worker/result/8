@@ -1,0 +1,7 @@
+./mpi_master_worker: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by ./mpi_master_worker)
+./mpi_master_worker: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by ./mpi_master_worker)
+./mpi_master_worker: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by ./mpi_master_worker)
+./mpi_master_worker: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by ./mpi_master_worker)
+./mpi_master_worker: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by ./mpi_master_worker)
+./mpi_master_worker: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by ./mpi_master_worker)
+./mpi_master_worker: /lib64/libstdc++.so.6: version `CXXABI_1.3.8' not found (required by ./mpi_master_worker)
